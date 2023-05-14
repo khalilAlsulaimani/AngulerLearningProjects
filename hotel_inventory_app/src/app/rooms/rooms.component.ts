@@ -27,6 +27,7 @@ export class RoomsComponent {
         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nytimes.com%2F2019%2F03%2F20%2Ftravel%2Fshop-hotel-rooms-boutiques-retail.html&psig=AOvVaw3buJ-84TWAHhlYuODHhb0G&ust=1681731559259000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNCx7riorv4CFQAAAAAdAAAAABAE',
       checkinTime: new Date('11-Nov-2021'),
       checkoutTime: new Date('21-Nov-2021'),
+      rating: 4.5,
     },
     {
       roomNumber: 2,
@@ -37,6 +38,7 @@ export class RoomsComponent {
         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nytimes.com%2F2019%2F03%2F20%2Ftravel%2Fshop-hotel-rooms-boutiques-retail.html&psig=AOvVaw3buJ-84TWAHhlYuODHhb0G&ust=1681731559259000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNCx7riorv4CFQAAAAAdAAAAABAE',
       checkinTime: new Date('10-Nov-2021'),
       checkoutTime: new Date('20-Nov-2021'),
+      rating: 3.4,
     },
     {
       roomNumber: 3,
@@ -47,6 +49,7 @@ export class RoomsComponent {
         'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nytimes.com%2F2019%2F03%2F20%2Ftravel%2Fshop-hotel-rooms-boutiques-retail.html&psig=AOvVaw3buJ-84TWAHhlYuODHhb0G&ust=1681731559259000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNCx7riorv4CFQAAAAAdAAAAABAE',
       checkinTime: new Date('10-Nov-2021'),
       checkoutTime: new Date('20-Nov-2021'),
+      rating: 2.5,
     },
   ];
 
