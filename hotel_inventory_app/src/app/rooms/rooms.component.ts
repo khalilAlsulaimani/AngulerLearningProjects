@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 import { Room, RoomList } from './room';
 
 @Component({
-  selector: 'app-rooms',
+  selector: 'hinv-rooms',
   templateUrl: './rooms.component.html',
   styleUrls: ['./rooms.component.scss'],
 })
@@ -20,8 +21,12 @@ export class RoomsComponent {
   };
 
   roomsList: RoomList[] = [];
+  title = 'room list';
+
+  @ViewChild(HeaderComponent) headerComponent!: HeaderComponent;
 
   ngOnInit(): void {
+    console.log(this.headerComponent);
     this.roomsList = [
       {
         roomNumber: 1,
@@ -61,6 +66,7 @@ export class RoomsComponent {
 
   toggle() {
     this.hideRooms = !this.hideRooms;
+    this.title = ' New Hotel Name';
   }
 
   selectRoom(room: RoomList) {

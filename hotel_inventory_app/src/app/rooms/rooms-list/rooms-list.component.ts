@@ -3,7 +3,10 @@ import {
   Component,
   EventEmitter,
   Input,
+  OnChanges,
+  OnInit,
   Output,
+  SimpleChanges,
 } from '@angular/core';
 import { RoomList } from '../room';
 
@@ -13,8 +16,16 @@ import { RoomList } from '../room';
   styleUrls: ['./rooms-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RoomsListComponent {
+export class RoomsListComponent implements OnInit, OnChanges {
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(changes);
+    if (changes['title']) {
+      this.title = changes['title'].currentValue.toLowerCase();
+    }
+  }
+  ngOnInit(): void {}
   @Input() rooms: RoomList[] = [];
+  @Input() title: string = '';
 
   @Output() selectedRoom = new EventEmitter<RoomList>();
 
