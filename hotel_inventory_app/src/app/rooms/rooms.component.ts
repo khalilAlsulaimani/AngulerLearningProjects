@@ -21,7 +21,7 @@ export class RoomsComponent {
     bookedRooms: 5,
   };
 
-  roomsList: RoomList[] = [];
+  roomList: RoomList[] = [];
   title = 'room list';
 
   @ViewChild(HeaderComponent) headerComponent!: HeaderComponent;
@@ -31,7 +31,9 @@ export class RoomsComponent {
   constructor(private roomsService: RoomsService) {}
 
   ngOnInit(): void {
-    this.roomsList = this.roomsService.getRooms();
+    this.roomsService.getRooms().subscribe((rooms) => {
+      this.roomList = rooms;
+    });
   }
 
   toggle() {
@@ -45,7 +47,7 @@ export class RoomsComponent {
 
   addRoom() {
     const room: RoomList = {
-      roomNumber: 4,
+      roomNumber: '4',
       roomType: 'Deluxe Room',
       amenity: 'Ac, free wifi , tv , bathroom',
       price: 500,
@@ -56,6 +58,6 @@ export class RoomsComponent {
       rating: 3.3,
     };
     //this.roomsList.push(room);
-    this.roomsList = [...this.roomsList, room];
+    this.roomList = [...this.roomList, room];
   }
 }
