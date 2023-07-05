@@ -4,11 +4,22 @@
   --primery-color: #026467;
   --secondery-color: #e5f5ea;
   --body-text-color: #596392;
-  --navbar-footer-color: #f9f9f9;
+  --navbar-footer-color: #c2c2c2d8;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: var(--body-text-color);
+}
+
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #c2c2c2d8;
+  color: #026467;
+}
+
+.nav-link {
+  color: #026467;
 }
