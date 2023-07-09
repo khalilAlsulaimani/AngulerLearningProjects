@@ -4,6 +4,8 @@ form div {
 
 .card {
   background-color: #e5f5ea;
+  width: 1200px;
+  border: none;
 }
 
 input[type="text"],
