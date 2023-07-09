@@ -33,6 +33,14 @@ body {
   background-color: var(--primery-color);
 }
 
+.bg-secondary-theme {
+  background-color: var(--secondery-color);
+}
+
+.text-theme-primery {
+  color: var(--primery-color);
+}
+
 input[type="text"],
 input[type="email"] {
   height: 60px;
@@ -46,5 +54,5 @@ input[type="email"] {
   color: white;
   border: none;
   font-size: 13px;
-  background-color: #026467;
+  background-color: var(--primery-color);
 }

@@ -11,3 +11,8 @@ form div {
 .sub-text {
   width: 500px;
 }
+
+.btn-sub {
+  background-color: #026467;
+  color: white;
+}
