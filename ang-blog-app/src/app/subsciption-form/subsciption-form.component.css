@@ -1,3 +1,27 @@
 form div {
   display: inline-block;
 }
+
+.card {
+  background-color: #e5f5ea;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 60px;
+  font-size: 13px;
+  width: 90%;
+}
+
+.btn-sub {
+  height: 58px;
+  width: 90%;
+  color: white;
+  border: none;
+  font-size: 13px;
+  background-color: #026467;
+}
+
+.sub-text {
+  width: 500px;
+}
