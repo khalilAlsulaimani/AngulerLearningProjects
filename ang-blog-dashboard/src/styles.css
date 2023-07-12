@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+:root {
+  --primery-color: #026467;
+  --secondery-color: #e5f5ea;
+  --body-text-color: #596392;
+  --navbar-footer-color: #c2c2c2d8;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: var(--body-text-color);
+}
+
+.site-logo {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: #c2c2c2d8;
+  color: #026467;
+}
+
+.nav-link {
+  color: #026467;
+}
+
+.shadow-effect {
+  border: none;
+  box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
+}
+
+.bg-theme {
+  background-color: var(--primery-color);
+}
+
+.bg-secondary-theme {
+  background-color: var(--secondery-color);
+}
+
+.text-theme-primery {
+  color: var(--primery-color);
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 60px;
+  font-size: 13px;
+  width: 90%;
+}
+
+.btn-sub {
+  height: 58px;
+  width: 90%;
+  color: white;
+  border: none;
+  font-size: 13px;
+  background-color: var(--primery-color);
+}
